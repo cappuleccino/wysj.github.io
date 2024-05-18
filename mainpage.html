@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好客山东</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: rgb(53, 115, 181);
+            padding: 10px 0;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        .header img {
+            height: 50px;
+            justify-content: left;
+            align-items: left;
+            vertical-align: middle;
+            margin-left: 20px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+        .search-container input[type="text"] {
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+        }
+        .search-container button {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 3px;
+            margin-left: 5px;
+            background-color: #0288d1;
+            color: white;
+            cursor: pointer;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section h2 {
+            color: rgb(53, 115, 181);
+            border-bottom: 2px solid rgb(53, 115, 181);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .section img {
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .content img {
+            width: 30%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        .content div {
+            flex: 1;
+        }
+        .cities {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .city {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .city img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            background-color: rgb(53, 115, 181);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .nav a {
+                margin: 0 10px;
+                font-size: 16px;
+            }
+            .content img {
+                width: 100%;
+                margin: 0 0 20px 0;
+            }
+            .cities .city {
+                width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            .nav a {
+                margin: 5px 5px;
+                font-size: 14px;
+            }
+            .header img {
+                height: 20px;
+            }
+            .search-container input[type="text"], .search-container button {
+                font-size: 14px;
+                padding: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="济宁logo.png" alt="Logo">
+            <div class="search-container">
+                <input type="text" placeholder="搜索...">
+                <button type="button">搜索</button>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#">好客山东</a>
+            <a href="#">历史文化</a>
+            <a href="#">美食介绍</a>
+            <a href="#">地方特产</a>
+            <a href="#">风景简介</a>
+            <a href="#">在线登录</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="banner.jpg" alt="Friendly Shandong">
+    </section>
+
+    <section class="section">
+        <h2>信息简介</h2>
+        <div class="content">
+            <img src="info1.jpg" alt="Info 1">
+            <img src="info2.jpg" alt="Info 2">
+            <div>
+                <p>济宁地处山东省西南部，素以“孔孟之乡、运河之都、文化济宁”著称，现辖2区（任城、兖州）、2市（曲阜、邹城）、7县（泗水、微山、鱼台、金乡、嘉祥、汶上、梁山）和3个功能区（济宁国家高新区、太白湖省级旅游度假区、济宁经济技术开发区），面积1.1万平方公里，人口890万。2023年，预计完成地区生产总值5600亿元、增长6.5%，实现一般公共预算收入475亿元、增长6.1%，主要经济指标增幅保持全省第一方阵。</p>
+                <p>济宁是文化名市。济宁是中华文明的重要发祥地，诞生了人文初祖轩辕黄帝和孔子、孟子、颜子、曾子、子思子五大圣人。所辖曲阜、邹城为国家历史文化名城，有“三孔”和京杭大运河两处世界文化遗产，有水浒故事发源地水泊梁山、铁道游击队故乡微山湖，圣地、文化、水乡交相辉映。</p>
+                <p>济宁是交通枢纽城市。济宁是淮海经济区中心城市，地处北京和上海黄金分割点。高铁2小时到北京、3小时到上海，济宁机场通航21个城市，京杭大运河流经7个县区、全长230公里，内河航运千吨级轮船、万吨级船队通江达海，中欧班列直达欧洲腹地。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>热门景点</h2>
+        <div class="cities">
+            <div class="city">
+                <img src="太白楼.jpg" alt="济南">
+                <h3>太白楼</h3>
+                <p>太白楼作为中国历史文化名楼之一，悠久的历史始终见证着诗仙李白文化在济宁的传承，是一代代济宁人心目中的文化地标。</p>
+            </div>
+            <div class="city">
+                <img src="孔府.jpg" alt="青岛">
+                <h3>孔府</h3>
+                <p>山东济宁曲阜是孔子的故乡。孔夫子生前在此开坛授学，创立儒家文化，为此后2000多年的中国历史深深地打上了儒学烙印。以孔子为代表的儒家文化，按照自己的理想塑造了整个中国的思想、政治和社会体系，成为整个中国文化的基石。</p>
+            </div>
+            <div class="city">
+                <img src="京杭大运河.jpg" alt="潍坊">
+                <h3>京杭大运河</h3>
+                <p>南北贯通的大运河始于隋唐时期，而它与济宁的结缘，则是在之后的元代，由于政治中心由长安、洛阳移到北京，华北地区需要更便捷的方式直通经济发达的江南，京杭大运河的开通大大缩短了南北之间的水运距离。</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>运河之都 孔孟之乡</p>
+    </footer>
+</body>
+</html>
